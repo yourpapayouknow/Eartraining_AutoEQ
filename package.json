@@ -1,0 +1,22 @@
+{
+  "name": "eartraining-autoeq",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Import AutoEQ parametric correction into Eartraining with a compact userscript.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourpapayouknow/Eartraining_AutoEQ.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check eartraining-autoeq.user.js && node --check check.cjs",
+    "test": "node check.cjs",
+    "test:webkit": "node check.cjs webkit"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
